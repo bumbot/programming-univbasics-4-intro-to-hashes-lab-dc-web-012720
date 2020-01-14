@@ -19,7 +19,7 @@ def my_hash_creator(key, value)
 end
 
 def read_from_hash(hash, key)
-  if hash.dig(key) == true
+  if hash.include?(key) == true
     return hash[key]
   end
   nil
