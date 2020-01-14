@@ -20,7 +20,7 @@ end
 
 def read_from_hash(hash, key)
   if hash.dig(key) == true
-    return hash[:key]
+    return hash[key]
   end
   nil
 end
